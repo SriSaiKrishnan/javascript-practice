@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title> The is Array Example 6</title>
+    </head>
+    <body>
+        <script>
+            var newHolder = ["cat", "dog", "rabbit", "bird"];
+            // Print the output as ["Horse","fish,fish,fish,fish,fish,fish,fish,"rabbit","dog","sheep"]
+            newHolder[10]  = "horse";
+            newHolder.fill("fish" ,3,10);
+            newHolder.reverse();
+            newHolder.pop();
+            newHolder.push("sheep");
+            console.log(newHolder);
+        </script>
+    </body>
+</html>

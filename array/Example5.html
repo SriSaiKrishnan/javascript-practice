@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title> Array Example 5</title>
+    </head>
+    <body>
+         <script>
+            var animals = ["cat", "dog", "birds", "fish", "zebra"];
+            
+             animals.push("sheep"); // add the item at end of the array
+             var remove = animals.pop(); // remove the item at end of the array 
+             
+             animals.shift()// remove the first item in array
+             animals.unshift("horse") // add the first item in array
+             
+             animals.splice(2,1); //remove from position and no of item
+             
+             animals.sort();
+             animals.reverse(); //or you can chain the methods as well
+             
+             //animals.sort().reverse()
+             
+             console.log(animals);
+             console.log(remove);
+             var startVal = animals.length;
+             animals[20] = "cat";
+             animals.fill("mouse",startVal,(animals.length-1));
+             
+    </script>
+    </body>
+</html>
