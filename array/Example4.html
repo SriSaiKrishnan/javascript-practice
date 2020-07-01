@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>Array Example 4</title>
+    </head>
+    <body>
+        <script>
+            var animal =  ["Dog","Cat","Birds","Fish","Rabbit"];
+            var randomIndex = Math.floor((Math.random())*animal.length)
+            var randomAnimal = animal[randomIndex];
+            var message = prompt("Which index value is " + randomAnimal);
+            var response = (message  == randomIndex) ? "Correct" : "Worng it was "  + randomIndex;
+            alert(response);
+        </script>
+    </body>
+</html>

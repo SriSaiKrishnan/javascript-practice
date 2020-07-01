@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>Array Example 2</title>
+    </head>
+    <body>
+        <script>
+            var task = ["Work for Blackboard","Learn JavaScript", "Learn Angular", "Learn Springboot"];
+            var progress = ["Done","In-progress","To-Do"];
+            var question1 = prompt("Which task 1-4?");
+            var question2 = prompt("Status 1 = Done 2 = In-progress 3 = To-Do");
+            
+            console.log("Today you will " + task[(Number(question1))-1] + " status of the task = " + progress[(Number(question2))-1]);
+        </script>
+    </body>
+</html>
