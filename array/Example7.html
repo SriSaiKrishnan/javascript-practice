@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title> This is Array Example 7</title>
+    </head>
+    <body>
+        <script>
+            var newHolder = ["cat","dog","fish","bird"];
+            var question1 = prompt("Enter the Item to check whether it is present in Array");
+            var status = newHolder.indexOf(question1);
+            var  message  = status>-1?"Item Present in the array at the index " + status : "Item not present in the array";
+            console.log(message);
+            console.log(newHolder.includes("dog")); //returns true;
+            console.log(newHolder.slice(1,2));
+            console.log(newHolder);
+        </script>
+    </body>
+</html>
