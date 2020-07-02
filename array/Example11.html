@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>This Object Example</title>
+    </head>
+    <body>
+        <script>
+            var emp = {empname:"Sai Krishnan",empid:001,empaddress:"Chennai Tamilnadu", empdob:"24-10-1993"};
+            console.log(emp);
+            console.log(emp.empname); //  retrive the object method 1
+            var prop = prompt("What you information you need to know");
+            console.log(emp[prop]); //  Method 2 to retrive object
+            emp.empname="Prasanth"; // Updating the object
+            console.log(emp.empname);
+            emp["empname"] = "Krishnan";
+            console.log(emp.empname);
+            console.log(typeof(emp));
+            
+            //Loop through the object
+            for(var property in emp){
+                console.log(property + " " + emp[property]);
+            }
+            
+        </script>
+    </body>
+</html>
