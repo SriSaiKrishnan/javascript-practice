@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Else If Statement</title>
+    </head>
+    <body>
+        <div id="output"> Else If Example</div>
+        <script>
+            var time = prompt("What is your hour now");
+            var output = document.getElementById("output");
+            if(time>=8 && time<12){
+                output.innerHTML = "Wake up is Morning";
+            }else if(time>=12 && time<13){
+                output.innerHTML = "Lunch time";
+            }else if(time>=13 && time<=16){
+                output.innerHTML = "Go to work";
+            }else if(time>16 && time<20){
+                output.innerHTML = "Dinner time"
+            }else if(time>=20 && time<22){
+                output.innerHTML = "It is evening go to sleep";
+            }else{
+                 output.innerHTML = "You should be sleeping";
+            }
+        </script>
+    </body>
+</html>

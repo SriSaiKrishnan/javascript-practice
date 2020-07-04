@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>Arrays and Object</title>
+    </head>
+    <body>
+        <script>
+            var bob = {age:20, hair:"black", eyes:"blue", works:"developer"};
+            var friends = { friend1 : bob, friend2 : {age:30,  hair:"black"}};
+            var friends1 = [bob,{age:30,  hair:"black"}]
+            console.log(friends.friend1.works);
+            console.log(friends1[0].age);
+            friends.friend1.age = 25;
+            console.log(friends);
+            friends1[1].age=25;
+            console.log(friends1);
+        </script>
+    </body>
+</html>

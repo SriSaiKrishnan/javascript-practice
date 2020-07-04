@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>Rock Paper Scisscor Game</title>
+    </head>
+    <body>
+        <div id = "output"> Rock Paper Scisscor</div>
+        <script>
+            var output = document.getElementById("output");
+            var player = prompt("Do you choose Rock, Paper or Scisscors ?");
+            var ps = player.charAt(0).toUpperCase();
+            var computer = Math.random();
+            if(computer<0.34){computer="Rock";}
+            else if(computer<0.67){computer="Paper";}
+            else {computer = "Scissors";}
+            var cs = computer.charAt(0).toUpperCase();
+            var win = false;
+            var html = "";
+            if(ps==cs){
+                html+="It's a TIE";
+            }else{
+                if(ps=="R"){
+                    player = "Rock";
+                    if(cs=="S"){
+                        win=true;
+                    }
+                }
+                else if (ps == "P") {
+                player = "Paper";
+                if (cs == "R") {
+                    win = true;
+                }
+            }
+            else {
+                player = "Scissors";
+                if (cs == "P") {
+                    win = true;
+                }
+            }
+            if (win) {
+                html += " You Win";
+            }
+            else {
+                html += " You Lost";
+            }
+            }
+            output.innerHTML = "You      vs    Computer<br>" + player + " vs " + computer + "<br>" + html;
+        </script>
+    </body>
+</html>

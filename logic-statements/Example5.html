@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title> Coin Toss Example</title>
+    </head>
+    <body>
+        <div id="output">Coin Toss</div>
+        <script>
+            var output = document.getElementById("output");
+            var question = prompt("Heads or Tails?");
+            var result = question=="Heads" ? 1 : 0;
+            var random = Math.floor(Math.random() * 2);
+            var html;
+            if((random==result)){
+                html = "Congrats its correct ";
+            }else {
+              html = "Sorry it's wrong "; 
+            }
+            output.innerHTML = html;
+        </script>
+    </body>
+</html>

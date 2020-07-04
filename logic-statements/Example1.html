@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>Logical Operators Example</title>
+    </head>
+    <body>
+        <div id ="output"></div>
+        <script>
+            var output = document.getElementById("output");
+            var usernames = ["Sai","Zakir","Ariv","Tom"];
+            var promptUser = prompt("Enter the Username");
+            var status = usernames.indexOf(promptUser) > -1 ? "Welcome " + promptUser : "Access Denied";
+            output.innerHTML = status;
+        </script>
+    </body>
+</html>

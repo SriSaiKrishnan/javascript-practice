@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title> If Else Example</title>
+    </head>
+    <body>
+        <div id = "output"></div>
+        <script>
+            var userNames = ["Sai","Zakir","Ariv","Tom","Logesh"];
+            var output = document.getElementById("output");
+            var userInput = prompt("Enter the user name");
+            var status = userNames.indexOf(userInput);
+            var htmlOutput;
+            if(status>-1){
+                alert("Hello")
+                htmlOutput = "Welcome " + userInput;
+                var age = prompt("What is your age");
+                htmlOutput += age > 18 ? " You are over 18 " : " You are under 18 ";
+            }else{
+                htmlOutput = " Access Denied ";
+            }
+            output.innerHTML  = htmlOutput + userInput;
+        </script>
+    </body>
+</html>
