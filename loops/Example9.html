@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>Loops and Object</title>
+    </head>
+    <body>
+        <div id="output"></div>
+        <script>
+            var userNames = {a:"Sai", b:"Zakir", c:"Ariv"};
+            var output = document.getElementById("output");
+            for(var x in userNames){
+                output.innerHTML += userNames[x] + "<br>";
+            }
+        </script>
+    </body>
+</html>

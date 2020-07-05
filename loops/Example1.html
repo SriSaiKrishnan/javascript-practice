@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>This is Loops Example</title>
+    </head>
+    <body>
+        <div id="output"></div>
+        <script>
+            var output = document.getElementById("output");
+            var x = Number(prompt("How many time do you want to iterate ?"));
+            var y = 1;
+            do{
+                 y++;
+                if(y%2==0){
+                output.innerHTML  += "Value of Y = " + y + "<br>";
+                }
+            }while(y<x);
+            output.innerHTML += "Final value of Y is " + y;
+        </script>
+    </body>
+</html>

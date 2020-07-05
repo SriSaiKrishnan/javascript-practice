@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Banana Calories Count</title>
+    </head>
+    <body>
+        <div id="output"></div>
+        <script>
+            var output = document.getElementById("output");
+            var userInput = Number(prompt("How many banana you want tp eat"));
+            var bananaCalories = 89;
+            var calories = 0;
+            var holder;
+            for(var x=1; x<=userInput; x++){
+                calories += bananaCalories;
+                holder = x>1 ? "bananas another" : "banana";
+                output.innerHTML += "You ate " +x+ " " + holder + " " + bananaCalories + 
+                    " calories added to your  total now at " + calories + "<br>";
+            }
+            output.innerHTML += "You have consumed " +calories+ " calories";
+        </script>
+    </body>
+</html>

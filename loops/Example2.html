@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title> While Loop</title>
+    </head>
+    <body>
+        <div id="output"></div>
+        <script>
+            var output = document.getElementById("output");
+            var x = 0;
+            var answer = Number(prompt("How many time do you need to loop"));
+            while(x<answer){
+                output.innerHTML += "Value of X = " + x + "<br>";
+                x++;
+            }
+            output.innerHTML += "Final value of X = " + x + "<br>";
+        </script>
+    </body>
+</html>

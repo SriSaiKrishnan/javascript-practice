@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>Password Validation</title>
+    </head>
+    <body>
+        <div id="output"></div>
+        <script>
+            var output = document.getElementById("output");
+            var password = "javascript";
+            var userInput = prompt("Enter the Password");
+            userInput.toLowerCase();
+            while(password!=userInput){
+              userInput = prompt("Wrong Password Enter the Password Again");  
+            }
+            output.innerHTML = "Welcome"
+        </script>
+    </body>
+</html>
