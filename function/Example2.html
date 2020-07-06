@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>Return Value in Function</title>
+    </head>
+    <body>
+    <div id="output"></div>
+    <script>
+        var a = "Hello"; //global variable
+        var output = document.getElementById("output");
+        output.innerHTML = myFunction();
+        function myFunction(){
+            var b = a + " " + "World"; //local variable
+            return b;
+        }
+    </script>
+        </body>
+</html>

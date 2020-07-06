@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>Calculator</title>
+    </head>
+    <body>
+        First Number : <input type="text" id="num1">
+        Second Number : <input type="text" id="num2">
+        <br>
+        <input type="button" onClick = "addBy()" value="Add">
+         <input type="button" onClick = "subBy()" value="Subtract">
+         <input type="button" onClick = "mulBy()" value="Multiply">
+         <input type="button" onClick = "divBy()" value="Divide">
+        <br>
+        <div id="output"></div>
+        <script>
+            var output = document.getElementById("output");
+            var num1 = document.getElementById("num1");
+            var num2 = document.getElementById("num2");
+            
+            function addBy(){
+                var a = Number(num1.value);
+                var b = "+";
+                var c = Number(num2.value);
+                var d = a + c;
+                outHTML(a,b,c,d);
+            }
+            
+             function subBy(){
+                var a = Number(num1.value);
+                var b = "-";
+                var c = Number(num2.value);
+                var d = a - c;
+                outHTML(a,b,c,d);
+            }
+            
+             function mulBy(){
+                var a = Number(num1.value);
+                var b = "*";
+                var c = Number(num2.value);
+                var d = a * c;
+                outHTML(a,b,c,d);
+            }
+            
+            function divBy(){
+                var a = Number(num1.value);
+                var b = "/";
+                var c = Number(num2.value);
+                var d = a / c;
+                outHTML(a,b,c,d);
+            }
+            
+            function outHTML(a,b,c,d){
+                output.innerHTML += a + " " + b + " " + c + "= " + d + "<br>";
+            }
+        </script>
+    </body>
+</html>

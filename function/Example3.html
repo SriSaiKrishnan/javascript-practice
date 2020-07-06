@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title> Function with buttons</title>
+    </head>
+    <body>
+        <div id="output"></div>
+        <input type="button" onClick = "myFun()" value="Click Me">
+        <script>
+            var output = document.getElementById("output");
+            var adj = ["Super", "Wonderful", "Fantastic", "Bad"];
+            function myFun(){
+                var question = prompt("What is your name");
+                var random = Math.floor((Math.random())*adj.length);
+                output.innerHTML +=  adj[random] + " " + question + "<br>";
+            }
+        </script>
+    </body>
+</html>
