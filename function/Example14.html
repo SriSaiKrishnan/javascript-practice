@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Shoping List</title>
+    </head>
+    <body>
+        <input type="text" id="text1">
+        <input type="button" onClick = "addItem()"  value="Add Item">
+        <div id="output"></div>
+        <script>
+            var items = [];
+            var output = document.getElementById("output");
+            function addItem(){
+            var item = document.getElementById("text1");
+                items.push(item.value);
+                displayItems(items);
+        }
+            function displayItems(arr){
+                output.innerHTML = " ";
+               for(var x=0; x<arr.length; x++){
+                    output.innerHTML += x+1 + ". " + arr[x] + "<br>";
+               }
+            }
+        </script>
+    </body>
+</html>
