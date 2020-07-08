@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title> This is Example 6
+        </title>
+    </head>
+    <body>
+        <div  id="wrapper"></div>
+        <input type="text" id="url" name="url" value="https://www.google.com/">
+        <input type="button" onClick="goUrl()" value="Go URL">
+        <input type="button" onClick="goUrl('https://javatpoint.com')" value="Go To Fav URL">
+        <script>
+            var output = document.getElementById("wrapper");
+            function goUrl(){
+                var url = document.getElementById("url").value;
+                window.location = url;
+            }
+            function goUrl(url){
+                window.location = url;
+            }
+        </script>
+    </body>
+</html>

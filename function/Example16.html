@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>Calculator using Callback</title>
+    </head>
+    <body>
+        <input type="text" id="num1">
+        <input type="text" id="num2">
+        <br>
+        <input type="button" onClick="add()" value="Add">
+        <input type="button" onClick="sub()" value="Subtract">
+        <input type="button" onClick="mul()" value="Multiply">
+        <input type="button" onClick="div()" value="Divide">
+        <input type="button" onClick="mod()" value="Modulus">
+        <br>
+        <div id="output"></div>
+        <script>
+            var output = document.getElementById("output");
+            var num1 = document.getElementById("num1");
+            var num2 = document.getElementById("num2");
+            
+            function add(){
+                outC(num1.value,num2.value,"+",function(a,b){
+                    return a + b;
+                })
+            }
+            
+            function sub(){
+                outC(num1.value,num2.value,"-",function(a,b){
+                    return a - b;
+                })
+            }
+            
+            function mul(){
+                outC(num1.value,num2.value,"+",function(a,b){
+                    return a * b;
+                })
+            }
+            
+             function div(){
+                outC(num1.value,num2.value,"+",function(a,b){
+                    return a / b;
+                })
+            }
+            
+             function mod(){
+                outC(num1.value,num2.value,"+",function(a,b){
+                    return a % b;
+                })
+            }
+            
+            function outC(a,b,s,cback){
+                var result = cback(Number(a),Number(b));
+                output.innerHTML +  = a + " " + s + " " + b + " = " + result + "<br>";
+            }
+        </script>
+    </body>
+</html>

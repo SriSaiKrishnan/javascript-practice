@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title> Interactive Element Example
+        </title>
+    </head>
+    <body>
+        <div id = "wrapper">Interactive Element Example</div>
+        <a href="Example2.html"> Example 2</a>
+        <a href="Example3.html"> Example 3</a>
+        <input type="button" onClick = "goBack()" value="Back"> <br>
+        <input type="button" onClick = "print()" value="Print">
+        <script>
+            var output = document.getElementById("wrapper");
+            function goBack(){
+                window.history.go(-1);
+            }
+        </script>
+    </body>
+</html>

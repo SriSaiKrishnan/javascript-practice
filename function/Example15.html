@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Call Back Function</title>
+    </head>
+    <body>
+        <div id="output"></div>
+        <script>
+            var output = document.getElementById("output");
+            function myMessage(s1,s2,callback){
+                var result1 = callback(s1,s2);
+                output.innerHTML = result1;
+            }
+            myMessage("Hello ","World ", function(s1,s2){
+              var result2 = s1+ s2 + " Worked";  
+                return result2;
+            });
+        </script>
+    </body>
+</html>

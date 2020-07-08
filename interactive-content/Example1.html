@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Interactive DOM</title>
+    </head>
+    <body>
+        <div id="wrapper"></div>
+        <script>
+            
+            var output = document.getElementById("wrapper");
+            
+            console.dir(window);
+            
+//            for (var w in window){
+//                document.write(w + " " + window[w] + "<br>");
+//            }
+//            
+                output.innerHTML += "Width " + window["innerWidth"] + " Height " + window["innerHeight"] + "<br>";
+             
+                output.innerHTML += window.location;
+            
+                var w = window.open('Example2.html');
+                    w.onbeforeunload = function () {
+                    alert("don't go anywhere");
+        }
+             
+        </script>
+    </body>
+</html>
