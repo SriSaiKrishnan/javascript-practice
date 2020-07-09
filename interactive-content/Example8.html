@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>Dom Traversing</title>
+    </head>
+    <body>
+        <div id="wrapper"></div>
+        <input type="button" onClick="myFun(this)" value="Click 1">
+        <input type="button" onClick="myFun(this)" value="Click 2">
+        <input type="button" onClick="myFun(this)" value="Click 3">
+    </body>
+    <script>
+        var output = document.getElementById("wrapper");
+        function myFun(t){
+            output.innerHTML = t.value;
+            t.value = "Clicked";
+        }
+    </script>
+</html>

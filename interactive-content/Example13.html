@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Event Object</title>
+    </head>
+    <body>
+        <div id="wrapper"></div>
+        <form>
+            First Name: <input type="text" name = "e1" id="e1" value="Sai" onchange="cFun()">
+            Last Name:  <input type="text" name = "e2" id="e2" value="Krishnan" onblur="cFun()">
+            <input type="button" onClick="sendInfo()" value="Submit">
+         </form>
+        <script>
+            function cFun(){
+                var e = event.target;
+                    if(e.name == "e1"){
+                        document.getElementById("wrapper").innerHTML = "First Name changed to " + e.value;
+                    }else{
+                         document.getElementById("wrapper").innerHTML = "Last Name changed to " + e.value;
+                    }
+                
+            }
+            function sendInfo(){
+                var p = event.target.parentElement;
+                message("Welcome " + p.e1.value +" " + p.e2.value);
+            }
+            function message(m){
+                document.getElementById("wrapper").innerHTML = m;
+            }
+        </script>
+    </body>
+</html>

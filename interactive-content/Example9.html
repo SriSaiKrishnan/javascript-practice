@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Dom Traversing</title>
+    </head>
+    <body>
+        <div id="wrapper">Page 1</div>
+        <form>
+        <input type="button" id="id1" value="Click 1">
+        <input type="button" id="id2" value="Click 2">
+        <input type="button" id="id3" value="Click 3">
+        </form>
+    </body>
+    <script>
+        var output = document.getElementById("wrapper");
+        document.getElementById("id1").onclick = myFun;
+        document.getElementById("id2").onclick = myFun;
+        document.getElementById("id3").onclick = myFun;
+        function myFun(){
+            output.innerHTML = this.value;
+           this.value = "Clicked";
+        }
+    </script>
+</html>
