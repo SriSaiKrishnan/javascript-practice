@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Dom Traversing</title>
+    </head>
+    <body>
+        <form id="myForm" name="myForm">
+            <input type="url" id="url">
+            <input type="first" id="first">
+            <input type="last" id="last">
+           <div id="another"> Parent
+               <div id="one">Test 1</div>
+               <div id="two">Test 2</div>
+                <div id="three">Test 3</div>
+               <div id="four">Test 4</div>
+                <div id="five">Test 5</div>
+               <div id="six">Test 6</div>
+               <input id="bt1" type="button" value="Click Here" onClick="myFunc()">
+            </div>
+        </form>
+        <script>
+            function myFunc(){
+            document.myForm.children[3].children[3].innerText = "Updated";
+            var a =document.body.children.myForm.children[3];
+            console.log(a.firstElementChild);
+            console.log(a.lastElementChild);
+            var b =document.body.children.myForm.children[3].firstElementChild;
+            console.log(b.nextElementSibling);  
+            console.log(b.previousElementSibling);
+            }
+        </script>
+    </body>
+</html>
