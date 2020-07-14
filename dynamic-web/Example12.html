@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Java Script Event Listener</title>
+    </head>
+    <body>
+        <div id="output">Welcome</div>
+        <input type="text" id="add">
+        <input type="button" id="additem" value="Add Item">
+        <h1>Shopping List</h1>
+        <ol id ="addnew"></ol>
+        <script>
+            var e = document.getElementById("additem"); 
+            e.addEventListener('click',function(){
+            var e = document.getElementById("add").value;
+            var li = document.createElement('li');
+                li.append(document.createTextNode(e));
+                document.getElementById("addnew").appendChild(li);
+            })
+        </script>
+    </body>
+</html>

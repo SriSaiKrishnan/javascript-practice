@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Javascript Built-In</title>
+    </head>
+    <body>
+        <div id="message">Built In Function</div>
+        <input type="button" value="Pop" onClick = "popUp()">
+        <input type="button" value="Close" onClick = "popClose()">
+        <script>
+            var wn;
+            
+            function popUp(){
+                var url = "https://www.google.com";
+                var opt = "top=0,width=200,height=200";
+                wn = window.open(url,"_blank",opt);
+                 }
+            
+            function popClose(){
+                wn.close();
+            }
+        </script>
+           
+            
+    </body>
+</html>
