@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>Complete Javascript</title>
+    </head>
+    <body>
+        <div id="output">Complete Javascript</div>
+        <script>
+            window.onload = init;
+            
+            function init(){
+                navigator.geolocation.getCurrentPosition(placeMap);
+            }
+            function placeMap(data){
+                console.dir(data);
+            }
+        </script>
+    </body>
+</html>
